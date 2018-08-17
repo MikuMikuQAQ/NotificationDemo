@@ -8,8 +8,13 @@
         tools:context=".MainActivity">
 
     <Button
-            android:text="发送通知"
+            android:text="发送弹出式通知"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" android:id="@+id/button1"/>
+    <Button
+            android:text="发送非弹出式通知"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/button2"
+            app:layout_constraintTop_toBottomOf="@+id/button1"/>
 
 </android.support.constraint.ConstraintLayout>
